@@ -1,24 +1,18 @@
 #include "main.h"
 /**
- * print_last_digit - get the last digit of a number
+ * _abs - computes the absolute value of an integrer
  *
- * @r: an integer  input
- * Description: print with _putchar delared
+ * @n: the int to check
  *
- * Return: last digit of r
+ * Return: the absolute value of int
+ *
  */
-int print_last_digit(int r)
+int _abs(int n)
 {
-	int i;
-
-	if (r < 0)
+	if (n >= 0)
 	{
-		i = -1 * (r % 10);
+		return (n);
 	}
-	else
-	{
-		i = r % 10;
-	}
-	_putchar((i % 10) + '0');
-	return (i % 10);
+	return (-n);
 }
+
